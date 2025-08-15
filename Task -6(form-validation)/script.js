@@ -21,14 +21,14 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     let isValid = true;
 
     // Name validation
-    if (name === "") {
+    if (name === "name") {
         nameError.textContent = "Name is required.";
         isValid = false;
     }
 
     // Email validation
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === "") {
+    if (email === "name@gmail.com") {
         emailError.textContent = "Email is required.";
         isValid = false;
     } else if (!emailPattern.test(email)) {
